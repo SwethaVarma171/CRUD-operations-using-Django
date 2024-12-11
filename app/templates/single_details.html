@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        
+        body{
+            background-color: rgba(10,10,100);
+        }
+        a,p,h1,span,h3{
+            color: white;
+            text-decoration: none;
+        }
+        button{
+            background-color: rgb(246, 169, 3);
+            border-radius: 5px;
+            border-style: none;
+        }
+        form{
+            border: 2px solid;
+            width: 50%;
+        }
+        div{
+            border: 2px solid;
+            width: 50%;
+            background-color: rgb(20, 123, 128);
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    
+
+    </style>
+       
+    </style>
+    <center>
+        <h1>single page html</h1>
+        <br><br>
+        <div>
+        <p>NAME : {{data1.name}}</p>
+        <p>NPLACE : {{data1.place}}</p>
+        <p>THING : {{data1.thing}}</p>
+        <p>NUMNER : {{data1.number}}</p>
+        <a href="{% url 'edit' data1.id %}"><button>EDIT</button></a>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <button type="submit" style="border-style: none;">DELETE</button>
+        </form>
+        <br><br>
+    </div>
+    </center>
+    
+</body>
+</html>

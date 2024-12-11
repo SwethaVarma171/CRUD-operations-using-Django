@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgba(10,10,100);
+        }
+        a,p,h1,span,h3{
+            color: white;
+            text-decoration: none;
+        }
+        button{
+            background-color: rgb(246, 169, 3);
+            border-radius: 5px;
+            border-style: none;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+
+    </style>
+    <!-- {{data}} -->
+     <center>
+        <h1>Welcome to Name Place Thing Number...(❁´◡`❁)</h1>
+    
+    
+     <span>To create a new data click on CREATE button</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{% url 'add' %}">
+        <button>CREATE</button></a>
+        <h3>Below are the details present in the DATABASE</h3>
+    {% for i in data %}
+     <!-- <p>  {{i.id}}</p> -->
+    <a href="{% url 'details' i.id %}"><p> {{i.id}}&nbsp;&nbsp;&nbsp;&nbsp;{{i.name}}</p></a>
+      {% endfor %}
+    </center>
+</body>
+</html>

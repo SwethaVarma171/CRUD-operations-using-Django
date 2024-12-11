@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgba(10,10,100);
+        }
+        a,p,h1,span,h3{
+            color: white;
+            text-decoration: none;
+        }
+        button{
+            background-color: rgb(246, 169, 3);
+            border-radius: 5px;
+            border-style: none;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+
+    </style>
+    <!-- {{data2}} -->
+    
+    <center>
+        <!-- <a href="{% url 'home' %}"><button>HOME</button></a> -->
+        <p>EDIT PAGE</p>
+    <br><br>
+        {% include 'form.html' %}
+</center>
+</body>
+</html>

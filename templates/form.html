@@ -1,0 +1,27 @@
+<style>
+    label{
+        color: white;
+    }
+    button{
+            background-color: rgb(246, 169, 3);
+            border-radius: 5px;
+            border-style: none;
+        }
+    button:hover{
+            cursor: pointer;
+        }
+</style>
+<center>
+    <br><br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="" >NAME</label> <input type="text" name="name" id="" value="{{data2.name}}"><br><br>
+            <label for="" >PLACE</label> <input type="text" name="place" id="" value="{{data2.place}}"><br><br>
+            <label for="" >THING</label> <input type="text" name="thing" id="" value="{{data2.thing}}"><br><br>
+            <label for="" >NUMBER</label> <input type="text" name="number" id="" value="{{data2.number}}"><br><br>
+            {% if update == True %}
+            <button type="submit">UPDATE</button>
+            {% else %}
+            <button type="submit">SUBMIT</button>
+            {% endif %}
+        </form></center>
