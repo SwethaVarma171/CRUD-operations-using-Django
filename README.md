@@ -5,6 +5,7 @@ This is a small project about how to do crud operations in django
 
 ![Screenshot 2025-01-08 222600](https://github.com/user-attachments/assets/f368578b-f4f5-4171-8bff-8f9ebdc4c04f)
 
+-- you can add data by clicking the create button it wiil take you to create page 
 
 ![Screenshot 2025-01-08 222636](https://github.com/user-attachments/assets/7627b54d-6b4b-4e09-bebc-137cf2b9b1c7)
 
