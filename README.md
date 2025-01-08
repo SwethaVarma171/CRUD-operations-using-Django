@@ -9,6 +9,7 @@ This is a small project about how to do crud operations in django
 
 ![Screenshot 2025-01-08 222636](https://github.com/user-attachments/assets/7627b54d-6b4b-4e09-bebc-137cf2b9b1c7)
 
+-- By clicking on submit it will store your data in database
 
 ![Screenshot 2025-01-08 222706](https://github.com/user-attachments/assets/f0930968-a54c-4d5a-aa34-efb6e00c8cf8)
 
